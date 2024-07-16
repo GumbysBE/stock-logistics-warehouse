@@ -18,14 +18,6 @@
                     <field name="reserves_count" invisible="1" />
                     <field name="all_lines_reserved" invisible="1" />
                 </button>
-                <button
-                    class="oe_stat_button"
-                    string="Stock Picking Reserve"
-                    type="object"
-                    name="action_view_reserves_stock_picking"
-                    icon="fa-truck"
-                    invisible="reserves_count == 0 or state != 'draft'"
-                />
             </xpath>
             <button name="action_quotation_send" position="before">
                 <field name="is_stock_reservable" invisible="1" />
